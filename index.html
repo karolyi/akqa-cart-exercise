@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-GB">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Your Basket</title>
+
+        <script src="lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="lib/jquery-ui.js" type="text/javascript"></script>
+        <script src="lib/modernizr-latest.js" type="text/javascript"></script>
+        <script src="js/itemWidget.js" type="text/javascript"></script>
+        <script src="js/cartWidget.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'/>
+
+        <script type="text/javascript">
+        $(function () {
+            $('#cart').cartWidget({
+                inputFile: 'data/cart.json'
+            });
+        });
+        </script>
+
+    </head>
+    <body>
+        <div id="content">
+            <div id="logo">AKQA</div>
+            <h1>Your Basket</h1>
+            <p>Items you have added to your basket are shown below.<br/>Adjust the quantities or remove items before continuing your purchase.</p>
+
+            <div id="cart">
+                <form id="cart-form" action="#">
+                    <div id="headings">
+                        <div class="header product">Product</div>
+                        <div class="header price">Price</div>
+                        <div class="header quantity">Qty</div>
+                        <div class="header cost">Cost</div>
+                    </div>
+                    <div id="items">
+                    </div>
+                    <div id="cart-totals">
+                        <div id="subtotal">
+                            <div class="heading">Sub total</div>
+                            <div class="amount">&pound;<span></span></div>
+                        </div>
+                        <div id="vat">
+                            <div class="heading">VAT @ 20%</div>
+                            <div class="amount">&pound;<span></span></div>
+                        </div>
+                        <div id="total">
+                            <div class="heading">Total Cost</div>
+                            <div class="amount">&pound;<span></span></div>
+                        </div>
+                    </div>
+                    <div id="buynow">
+                        <button id="buy-btn" type="button" disabled="disabled">Buy Now &raquo;</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer"><strong>&copy; 2013 AKQA Ltd.</strong> Registered in England: 2964394</div>
+    </body>
+</html>

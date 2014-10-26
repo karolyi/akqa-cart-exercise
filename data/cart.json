@@ -1,0 +1,19 @@
+{
+    "basket": [
+        {
+            "product": "Cotton T-Shirt, Medium",
+            "price": 1.99,
+            "quantity": 1
+        },
+        {
+            "product": "Baseball Cap, One Size",
+            "price": 2.99,
+            "quantity": 2
+        },
+        {
+            "product": "Swim Shorts, Medium",
+            "price": 3.99,
+            "quantity": 1
+        }
+    ]
+}

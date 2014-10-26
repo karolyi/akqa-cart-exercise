@@ -1,0 +1,356 @@
+html {
+    background-image:  -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #FFFFFF),
+        color-stop(1, #DADADA)
+    );
+    background-image:  -o-linear-gradient(bottom, #FFFFFF 0%, #DADADA 100%);
+    background-image:  -moz-linear-gradient(bottom, #FFFFFF 0%, #DADADA 100%);
+    background-image:  -webkit-linear-gradient(bottom, #FFFFFF 0%, #DADADA 100%);
+    background-image:  -ms-linear-gradient(bottom, #FFFFFF 0%, #DADADA 100%);
+    background-image:  linear-gradient(to bottom, #FFFFFF 0%, #DADADA 100%);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    font-family: 'Droid Serif', serif;
+    margin: 0 auto;
+    width: 580px;
+}
+
+#logo {
+    background-image: url(../assets/logo.png);
+    font-size: 0;
+    height: 48px;
+    margin: 130px 0 0 21px;
+    width: 100px;
+}
+
+#content h1 {
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 67px 0 0 21px;
+}
+
+#content p {
+    font-size: 14px;
+    margin: 12px 0 0 22px;
+}
+
+#cart form input {
+    display: inline-block;
+    font-size: 14px;
+    height: 22px;
+    text-align: center;
+    width: 31px;
+}
+
+#headings {
+    border-bottom: 2px solid;
+    float: left;
+    margin: 60px 0 0;
+    width: 510px;
+}
+
+#headings .header {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 0 19px;
+}
+
+#headings .header.product {
+    width: 238px;
+}
+
+#headings .header.price {
+    text-align: right;
+    width: 60px;
+}
+
+#headings .header.quantity {
+    text-align: center;
+    width: 70px;
+}
+
+#headings .header.cost {
+    text-align: right;
+    width: 50px;
+}
+
+#items {
+    float: left;
+    margin: 27px 0 0;
+    width: 550px;
+}
+
+#items .item {
+    clear: left;
+    float: left;
+    font-size: 18px;
+    padding: 13px 10px 9px 0;
+}
+
+#items .item: hover {
+    background-color: #ddd;
+}
+
+#items .item .product,
+#items .item .price,
+#items .item .quantity,
+#items .item .cost,
+#items .item .remove {
+    float: left;
+    margin-left: 20px;
+}
+
+#cart-totals {
+    color: #666;
+    float: left;
+    margin: 27px 0 0;
+    width: 498px;
+}
+
+#items .item .product {
+    display: block;
+    width: 235px;
+}
+
+#items .item .price {
+    text-align: right;
+    width: 63px;
+}
+
+#items .item .quantity {
+    margin-top: -4px;
+    padding: 0;
+    width: 79px;
+}
+
+#items .item .quantity input {
+    border: 1px #999 solid;
+    float: left;
+    height: 28px;
+    padding-right: 4px;
+    text-align: right;
+    width: 34px;
+}
+
+#items .item .quantity .qty-ctrl {
+    float: left;
+    font-size: 0;
+    margin-left: 4px;
+    width: 17px;
+}
+
+#items .item .quantity .qty-ctrl .qty-up {
+    background-color: #999;
+    border: 0;
+    color: #FFF;
+    height: 15px;
+    margin-bottom: 2px;
+    padding: 0;
+    width: 16px;
+}
+
+#items .item .quantity .qty-ctrl .qty-up span {
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+}
+
+#items .item .quantity .qty-ctrl .qty-down {
+    background-color: #999;
+    border: 0;
+    color: #FFF;
+    height: 15px;
+    padding: 0;
+    width: 16px;
+}
+
+#items .item .quantity .qty-ctrl .qty-down span {
+    clear: left;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+}
+
+#items .item .cost {
+    width: 53px;
+}
+
+#items .item .remove {
+    background-color: transparent;
+    background-image: url(../assets/trash.png);
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    border: 0;
+    height: 24px;
+    margin-left: 10px;
+    padding: 0;
+    width: 18px;
+}
+
+#cart-totals > div {
+    clear: both;
+    float: left;
+    width: 498px;
+}
+
+#cart-totals .heading {
+    float: left;
+    padding: 0 0 7px 22px;
+    width: 380px;
+}
+
+#cart-totals .amount {
+    float: left;
+    text-align: right;
+    width: 80px;
+}
+
+#cart-totals #total {
+    color: #000;
+    font-weight: 700;
+    padding: 20px 0 0;
+}
+
+#buynow {
+    clear: both;
+    float: left;
+    margin: 47px 0 178px;
+    width: 479px;
+}
+
+#buy-btn {
+    background-color: #000065;
+    border: 0 none;
+    color: #fff;
+    float: right;
+    font-size: 23px;
+    font-weight: 700;
+    height: 50px;
+    padding: 10px 0 10px 5px;
+    text-align: left;
+    text-decoration: none;
+    width: 130px;
+    border-radius: 10px;
+}
+
+#buy-btn: disabled {
+    background-color: #ccc;
+    color: #333;
+}
+
+#footer {
+    background-color: #666;
+    border-top: 1px solid #000;
+    clear: both;
+    color: #fff;
+    font-size: 11px;
+    margin: 10px 0 0;
+    padding: 14px 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media all and max-width 699px and min-width 520px{
+    #logo {
+        margin: 70px 0 0;
+    }
+}
+
+@media all and max-width 520px and min-width 320px{
+    #logo {
+        margin: 50px 0 0;
+    }
+
+    #content h1 {
+        margin: 25px 0 0 21px;
+    }
+
+    #headings {
+        margin: 30px 0 0;
+        width: 100%;
+    }
+
+    #headings .header {
+        font-size: 14px;
+    }
+
+    #items {
+        width: 110%;
+    }
+
+    #items .item {
+        font-size: 12px;
+        padding: 0 0 13px 19px;
+    }
+
+    #headings .header.product {
+        width: 39%;
+    }
+
+    #headings .header.price,
+    #items .item.price {
+        width: 10%;
+    }
+
+    #items .item.product,
+    #items .item.product {
+        width: 34%;
+    }
+
+    #items .item.cost {
+        width: 8%;
+    }
+
+    #cart-totals,
+    #cart-totals > div,
+    #buynow {
+        width: 100%;
+    }
+
+    #cart-totals .heading {
+        width: 50%;
+    }
+
+    #cart-totals .amount {
+        width: 40%;
+    }
+
+    #headings .header.quantity,
+    #items .item.quantity,
+    #headings .header.cost {
+        width: 15%;
+    }
+}
+
+@media all and max-width 320px and min-width 120px{
+    #headings .header.product {
+        width: 32%;
+    }
+
+    #headings .header.quantity,
+    #items .item.quantity {
+        width: 16%;
+    }
+
+    #items .item.cost {
+        width: 5%;
+    }
+
+    #items .item.remove a {
+        font-size: 12px;
+    }
+
+    #items > div {
+        height: 46px;
+    }
+}
